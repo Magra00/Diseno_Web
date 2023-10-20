@@ -221,6 +221,7 @@ h2{
     width: 100%;
     height: 50vh;
     font-size: 1.5em;
+    
     }
 
 .input{
@@ -253,3 +254,46 @@ footer img{
     margin-right: 2em;
     margin-left: 2em;    
 }
+
+/* comienza diseño responsivo */
+.hamburguesa{
+    display: none;
+}
+
+@media(max-width:900px){
+    nav ul{
+        display: none;}
+        .hamburguesa{display: block;}
+        header{
+            height: 70vh;
+            text-align: center;        
+        }
+        #acerca{
+            height: 60vh;            
+        }
+        .contenedor1{
+            flex-direction: column;
+        }
+        .contenedor2{
+            width: 100%;
+        }
+        #saberes{
+            height: 190vh;
+        }
+        .contenedor_saberes{
+            height: 180vh;
+            flex-direction: column;            
+        }
+        .saber{
+            width: 90%;
+        }
+        .contacto img{
+            display: none;
+        }
+        .contacto{
+            width: 90%;
+            margin: auto;
+        }
+    
+}
+
