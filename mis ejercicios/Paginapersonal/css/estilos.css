@@ -294,6 +294,84 @@ footer img{
             width: 90%;
             margin: auto;
         }
+
+        nav ul{
+            display:none;
+            position: absolute;
+            top: 50px;
+            right: 100px;
+        }
+        input:checked  ~ ul{
+            display:block;
+            border: solid 3px blue;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(89, 206, 241);
+            box-shadow: 5px 5px 5px 5px black;
+             }
+
+             input {
+                display: none;
+            }
+            nav li{
+                margin: 50px;
+                padding: 10px;
+        
+           }
     
 }
 
+.portafolio{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(57, 80, 155);
+}
+
+.contenedor-imagenes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+
+}
+
+.imagenes{
+    display: flex;
+    width: 60%;
+    height: 60vh;
+    border: solid 5px black;
+}
+
+.contenedor-imagenes img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.contenedor-imagenes img:hover{
+    cursor: crosshair;
+    width: 40%;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+/* PSEUDO ELEMENTOS */
+
+::-webkit-scrollbar{
+    width: 12px;
+    background-color: red;
+  }
+
+   ::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background-color: blue;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9);
+  }
+
+  ::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: linear-gradient(rgba(255, 0, 221, 0.466),rgba(255, 0, 0, 0.459))
+  }
