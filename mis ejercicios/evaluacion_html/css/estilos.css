@@ -1,0 +1,26 @@
+*{
+    text-align: center;
+}
+header{
+    background-color: black;
+    color:  rgba(203, 245, 245, 0.836);
+}
+nav{
+    background-color: rgba(203, 245, 245, 0.836);
+    color: black;
+}
+section{
+    background-color: rgb(79, 180, 226);
+}
+aside{
+    background-color: rgb(240, 46, 214);
+}
+body{
+    background-color: rgba(98, 145, 145, 0.836) ;
+}
+main{
+    background-color: rgba(203, 245, 245, 0.836)
+}
+footer{
+    background-color: rgba(223, 209, 21, 0.582);
+}
